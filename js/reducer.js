@@ -19,3 +19,5 @@ function dispatch(action){
   state = reducer(state, action);
   render();
 }
+
+dispatch({type: '@@INIT'})
