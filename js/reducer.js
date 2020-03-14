@@ -11,6 +11,11 @@ case 'INCREASE_COUNT':
   }
 }
 
+function render(){
+  let container = document.getElementById('container');
+  container.textContent = state.count;
+}
+
 function dispatch(action){
   state = reducer(state, action);
 }
