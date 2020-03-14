@@ -10,3 +10,7 @@ case 'INCREASE_COUNT':
   return state;
   }
 }
+
+function dispatch(action){
+  state = reducer(state, action);
+}
